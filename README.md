@@ -55,22 +55,22 @@ df_high_activity['parental_age_profile'].value_counts()
  crosstabfam= pd.crosstab(df_high_activity['marital_status'], df_high_activity['no_of_dependents'], dropna=False)
  crosstabfam
  ```
- ```
- # create parental-relationship status flag for different groups
+```
+# create parental-relationship status flag for different groups
 df_high_activity.loc[(df_high_activity['marital_status'] == 'single') & (df_high_activity['no_of_dependents']>=1), 'parental_relationship_status']= 'Single Parent'
 df_high_activity.loc[(df_high_activity['marital_status'] == 'divorved/widowed') & (df_high_activity['no_of_dependents']>=1), 'parental_relationship_status']= 'Single Parent'
 df_high_activity.loc[(df_high_activity['marital_status'] == 'living with parents and siblings') & (df_high_activity['no_of_dependents']>=1), 'parental_relationship_status']= 'Single Parent'
 df_high_activity.loc[(df_high_activity['marital_status'] =='married') & (df_high_activity['no_of_dependents']>=1), 'parental_relationship_status']= 'Nuclear Family'
 df_high_activity['parental_relationship_status'].value_counts()
- ```
+```
  6d. Relationship-Age Profile  
   ```
   # create a relationship-age flag
 crosstab_ra= pd.crosstab(df_high_activity['age_profile'], df_high_activity['marital_status'], dropna=False)
 crosstab_ra
+   ```  
    ```
-    ```
-    df_high_activity.loc[(df_high_activity['age_profile']=='Mid Adult') & (df_high_activity['marital_status'] == 'divorced/widowed'), 'relationship_age_status']= 'Single Mid Adult'
+   df_high_activity.loc[(df_high_activity['age_profile']=='Mid Adult') & (df_high_activity['marital_status'] == 'divorced/widowed'), 'relationship_age_status']= 'Single Mid Adult'
 df_high_activity.loc[(df_high_activity['age_profile']=='Mid Adult') & (df_high_activity['marital_status'] == 'single'), 'relationship_age_status']= 'Single Mid Adult'
 df_high_activity.loc[(df_high_activity['age_profile']=='Mid Adult') & (df_high_activity['marital_status'] == 'living with parents and siblings'), 'relationship_age_status']= 'Single Mid Adult'
 df_high_activity.loc[(df_high_activity['age_profile']=='Mid Adult') & (df_high_activity['marital_status']=='married'), 'relationship_age_status']= 'Married Mid Adult'
@@ -81,16 +81,16 @@ df_high_activity.loc[(df_high_activity['age_profile']=='Senior') & (df_high_acti
 df_high_activity.loc[(df_high_activity['age_profile']=='Young Adult') & (df_high_activity['marital_status'] == 'divorced/widowed'), 'relationship_age_status']= 'Single Young Adult'
 df_high_activity.loc[(df_high_activity['age_profile']=='Young Adult') & (df_high_activity['marital_status'] == 'single'), 'relationship_age_status']= 'Single Young Adult'
 df_high_activity.loc[(df_high_activity['age_profile']=='Young Adult') & (df_high_activity['marital_status'] == 'living with parents and siblings'), 'relationship_age_status']= 'Single Young Adult'
-df_high_activity.loc[(df_high_activity['age_profile']=='Young Adult') & (df_high_activity['marital_status']=='married'), 'relationship_age_status']= 'Married Young Adult'
-     ```
- 6e. Income Profile  
- ```
- # creating Income profile
+df_high_activity.loc[(df_high_activity['age_profile']=='Young Adult') & (df_high_activity['marital_status']=='married'), 'relationship_age_status']= 'Married Young Adult'  
+```
+ 6e. Income Profile. 
+```
+# creating Income profile
 df_high_activity.loc[df_high_activity['income']<=50000, 'income_profile']= 'Low Class'
 df_high_activity.loc[(df_high_activity['income']>51000) & (df_high_activity['income']<=150000), 'income_profile']= "Mid Class"
 df_high_activity.loc[df_high_activity['income']>=151000, 'income_profile']= 'High Class'
 df_high_activity['income_profile'].value_counts()
- ```
+```
  6f. Gender Profile  
  6g. Deparments Profiles - Alcohol, Baby items, International items
 7. Creating an appropriate visualization to show the distribution of profiles  
@@ -126,7 +126,7 @@ bar_total_customers=df_unique_customers['region'].value_counts(dropna=False).sor
 plt.title('Total customers in each region', fontsize=18)
 plt.xlabel('Number of customers', fontsize=15)
 plt.legend(fontsize=15)
-```
+```  
 Output  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/753442a4e432b02ff9827715d5a981b4968524c9/04%20Analysis/Visualizations/bar_total_customers.png)
 9b. Order Frequency Distribution  
@@ -165,7 +165,7 @@ department_bar=df_high_activity['department'].value_counts(dropna=False).sort_va
 plt.title('Distribution by Deparments', fontsize=20)
 plt.xlabel('The Amount of Products Purchased', fontsize=15)
 ```  
-Output  
+Output    
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/9fa9b2555ca21d76d65b72a71cd6d2b88bf3dfe2/04%20Analysis/Visualizations/bar_departments.png)
 10b. Product Price Ranges  
 ``` 
@@ -176,47 +176,57 @@ price_pie=df_high_activity['price_range_loc'].value_counts().plot.pie(shadow=Tru
                                                             colors=['steelblue', 'Sienna', 'paleturquoise'],
                                                             label='')
 ```   
-Output
+Output  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/9fa9b2555ca21d76d65b72a71cd6d2b88bf3dfe2/04%20Analysis/Visualizations/pie_price_range.png)  
 10c. Customer Loyalty  
 10d. Customer Spending  
 10e. Order Frequency  
 11. Exporting Final Dataset to_pickle. 
 
-# Another Received pictures  
+# Other Received pictures during the analysis. 
 
 1. bar_chart_orders_day_of_week. 
 2. bar_chart_parental_age_distribution. 
 3. bar_chart_parental_age_region_stacked  
-4. bar_ppr_region  
-5. bar_relationship_age_distribution  
-6. bar_relationship_single_parent_distribution  
-7. bar_total_customers  
-8. gender_distribution_pie  
-9. histogram_income  
-10. hist_order_hour_of_day  
-11. hist_prices  
-12. income_distribution_hist  
-13. income_distribution_of_customres  
-14. income_distribution  
-15. line_dow_prices  
-16. line_fam_status_age  
-17. line_hour_of_day  
-18. pei_alcohol_distribution  
-19. pie_baby_distribution  
-20. pie_customer_spending  
-21. pie_international_distribution  
-22. pie_loyalty_to_brand  
-23. pie_order_frequency  
-24. pie_pet_distribution  
-25. price_range_region_stacked  
-26. splot_income  
-27. splot_prices  
-28. stacked_age_order_freq  
-29. stacked_department_region
-30. stacked_family_order_freq  
-31. stacked_family_stat_price_range  
-32. stacked_parental_relationship_region  
-33. stacked_order_frequency_region  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/bar_parental_age_region_stacked.png)
+5. bar_ppr_region  
+6. bar_relationship_age_distribution  
+7. bar_relationship_single_parent_distribution  
+8. bar_total_customers  
+9. gender_distribution_pie  
+10. histogram_income  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/hist_income.png)
+12. hist_order_hour_of_day  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/hist_order_hour_of_day.png)
+14. hist_prices  
+15. income_distribution_hist 
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/income_distribution_hist.png)  
+17. income_distribution_of_customres  
+18. income_distribution  
+19. line_dow_prices  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/line_dow_prices.png)
+21. line_fam_status_age  
+22. line_hour_of_day  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/line_hour_of_day.png)
+24. pei_alcohol_distribution  
+25. pie_baby_distribution  
+26. pie_customer_spending  
+27. pie_international_distribution  
+28. pie_loyalty_to_brand 
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/pie_loyalty_to_brand.png)  
+30. pie_order_frequency  
+31. pie_pet_distribution  
+32. price_range_region_stacked  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/price_range_region_stacked.png)
+34. splot_income  
+35. splot_prices  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/splot_prices.png)
+36. stacked_age_order_freq  
+37. stacked_department_region
+38. stacked_family_order_freq  
+39. stacked_family_stat_price_range  
+40. stacked_parental_relationship_region  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/stacked_parental_relationship_region.png)  
+42. stacked_order_frequency_region  
 
 
