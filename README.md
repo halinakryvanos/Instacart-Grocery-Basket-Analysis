@@ -155,16 +155,35 @@ plt.title('Distribution of Departments by Region', fontsize = 20)
 plt.legend(loc='upper center', ncol=4)
 ```  
 Output  
-![This is an image]
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/9fa9b2555ca21d76d65b72a71cd6d2b88bf3dfe2/04%20Analysis/Visualizations/stacked_department_region1.png). 
+
 10. Basic Visualisation  
 10a. Departments  
+```
+# Distribution by Departments
+department_bar=df_high_activity['department'].value_counts(dropna=False).sort_values(ascending=True).plot.barh(color=['olivedrab'], fontsize=12)
+plt.title('Distribution by Deparments', fontsize=20)
+plt.xlabel('The Amount of Products Purchased', fontsize=15)
+```  
+Output  
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/9fa9b2555ca21d76d65b72a71cd6d2b88bf3dfe2/04%20Analysis/Visualizations/bar_departments.png)
 10b. Product Price Ranges  
+``` 
+#create pie chart for product price range distribution
+price_pie=df_high_activity['price_range_loc'].value_counts().plot.pie(shadow=True,
+                                                            startangle=90,
+                                                            autopct=('%1.f%%'),
+                                                            colors=['steelblue', 'Sienna', 'paleturquoise'],
+                                                            label='')
+```   
+Output
+![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/9fa9b2555ca21d76d65b72a71cd6d2b88bf3dfe2/04%20Analysis/Visualizations/pie_price_range.png)  
 10c. Customer Loyalty  
 10d. Customer Spending  
 10e. Order Frequency  
-11. Exporting Final Dataset  
+11. Exporting Final Dataset to_pickle. 
 
-# Received pictures  
+# Another Received pictures  
 
 1. bar_chart_orders_day_of_week. 
 2. bar_chart_parental_age_distribution. 
