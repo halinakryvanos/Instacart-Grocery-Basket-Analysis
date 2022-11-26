@@ -5,17 +5,19 @@ Instacart already has very good sales, but they want to uncover more information
 My task was to perform an initial data and exploratory analysis of some of their data in order to derive insights and suggest strategies for better segmentation based on the provided criteria.
 
 # Developed skills:  
-Exploratory Analysis using open-source data sets.  
-Provided business insights and strategy suggestions for marketing and segmentation.  
-Data set analysis to detect patterns.  
-Python, creating scripts to perform data wrangling and merge data frames.  
-Python, Data visualization.  
-Presentation results in [Exel](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/02a900c9c475bfc1c45ff96aec35f67b6ea50877/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)
+- Exploratory Analysis using open-source data sets.  
+- Provided business insights and strategy suggestions for marketing and segmentation.  
+- Data set analysis to detect patterns.  
+- Python, creating scripts to perform data wrangling and merge data frames.  
+- Python, Data visualization.  
+- Presentation results in **[Exel](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/02a900c9c475bfc1c45ff96aec35f67b6ea50877/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**
 
 # A list of Jupyter notebooks and functions for Instacard tasks.   
 Or **Refer to the short [video Jupyter Notebook](https://youtu.be/2BJDCA6wUz4) with the code**.  
 
-Table of Contents  
+Some code and visualization options are shown here, if You want to see the full report look this **[file](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/02a900c9c475bfc1c45ff96aec35f67b6ea50877/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**  
+
+**Table of Contents**   
 1. Data importing  
 2. Data checks and merging dataframes  
 3. PII privacy checks  
@@ -189,44 +191,42 @@ Output
 2. bar_chart_parental_age_distribution. 
 3. bar_chart_parental_age_region_stacked  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/bar_parental_age_region_stacked.png)
-5. bar_ppr_region  
-6. bar_relationship_age_distribution  
-7. bar_relationship_single_parent_distribution  
-8. bar_total_customers  
-9. gender_distribution_pie  
-10. histogram_income  
-![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/hist_income.png)
-12. hist_order_hour_of_day  
+4. bar_ppr_region  
+5. bar_relationship_age_distribution  
+6. bar_relationship_single_parent_distribution  
+7. bar_total_customers  
+8. gender_distribution_pie  
+9. histogram_income  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/hist_order_hour_of_day.png)
-14. hist_prices  
-15. income_distribution_hist 
+10. hist_prices  
+11. income_distribution_hist 
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/income_distribution_hist.png)  
-17. income_distribution_of_customres  
-18. income_distribution  
-19. line_dow_prices  
+12. income_distribution_of_customres  
+13. income_distribution  
+14. line_dow_prices  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/line_dow_prices.png)
-21. line_fam_status_age  
-22. line_hour_of_day  
+15. line_fam_status_age  
+16. line_hour_of_day  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/line_hour_of_day.png)
-24. pei_alcohol_distribution  
-25. pie_baby_distribution  
-26. pie_customer_spending  
-27. pie_international_distribution  
-28. pie_loyalty_to_brand 
+17. pei_alcohol_distribution  
+18. pie_baby_distribution  
+19. pie_customer_spending  
+20. pie_international_distribution  
+21. pie_loyalty_to_brand 
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/pie_loyalty_to_brand.png)  
-30. pie_order_frequency  
-31. pie_pet_distribution  
-32. price_range_region_stacked  
+22. pie_order_frequency  
+23. pie_pet_distribution  
+24. price_range_region_stacked  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/price_range_region_stacked.png)
-34. splot_income  
-35. splot_prices  
+25. splot_income  
+26. splot_prices  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/splot_prices.png)
-36. stacked_age_order_freq  
-37. stacked_department_region
-38. stacked_family_order_freq  
-39. stacked_family_stat_price_range  
-40. stacked_parental_relationship_region  
+27. stacked_age_order_freq  
+28. stacked_department_region
+29. stacked_family_order_freq  
+30. stacked_family_stat_price_range  
+31. stacked_parental_relationship_region  
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/stacked_parental_relationship_region.png)  
-42. stacked_order_frequency_region  
+32. stacked_order_frequency_region  
 
 
