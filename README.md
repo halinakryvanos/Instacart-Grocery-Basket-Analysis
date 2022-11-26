@@ -10,7 +10,7 @@ My task was to perform an initial data and exploratory analysis of some of their
 - Data set analysis to detect patterns.  
 - Python, creating scripts to perform data wrangling and merge data frames.  
 - Python, Data visualization.  
-- Presentation results in **[Exel](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/02a900c9c475bfc1c45ff96aec35f67b6ea50877/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**
+- Presentation results in **[Exel](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/0536a797c4e90f660a9475ab7995fe5c0e20d250/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**
 
 # A list of Jupyter notebooks and functions for Instacard tasks.   
 Or **Refer to the short [video Jupyter Notebook](https://youtu.be/2BJDCA6wUz4) with the code**.  
