@@ -4,7 +4,7 @@ Instacart, an online grocery store that operates through an app.
 Instacart already has very good sales, but they want to uncover more information about their sales patterns.  
 My task was to perform an initial data and exploratory analysis of some of their data in order to derive insights and suggest strategies for better segmentation based on the provided criteria.
 
-# Developed skills:  
+### Developed skills:  
 
 - Exploratory Analysis using open-source data sets.  
 - Provided business insights and strategy suggestions for marketing and segmentation.  
@@ -18,7 +18,7 @@ My task was to perform an initial data and exploratory analysis of some of their
 - Python, Data visualization.  
 - Reporting in **[Excel](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/0536a797c4e90f660a9475ab7995fe5c0e20d250/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**
 
-# A list of Jupyter notebooks and functions for Instacard tasks.   
+### A list of Jupyter notebooks and functions for Instacard tasks.   
 Or **Refer to the short [video Jupyter Notebook](https://youtu.be/2BJDCA6wUz4) with the code**.  
 
 Some code and visualization options are shown here, if You want to see the full report look this **[file](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/02a900c9c475bfc1c45ff96aec35f67b6ea50877/05%20Sent%20to%20client/Final%20report%20Halina%20Kryvanos.xlsx)**  
@@ -191,7 +191,7 @@ Output
 10e. Order Frequency  
 11. Exporting Final Dataset to_pickle. 
 
-# Other Received pictures during the analysis. 
+### Other Received pictures during the analysis. 
 
 1. bar_chart_orders_day_of_week. 
 2. bar_chart_parental_age_distribution. 
@@ -235,4 +235,5 @@ Output
 ![This is an image](https://github.com/halinakryvanos/Instacart-Grocery-Basket-Analysis/blob/e0c8ab2d01168e1d40264d488b54b721e2243d6e/04%20Analysis/Visualizations/stacked_parental_relationship_region.png)  
 32. stacked_order_frequency_region  
 
-
+### Recommendations:  
+After reviewing all the charts above, we should focus on showing ads to 3 main groups: young adults, young parents, and people from the upper economic class. As stated earlier, you adults and parents may be struggling to afford using Instacart, so we can create a discount program for students or people with dependents. In addition, we can show more ads that target people from the upper classes because they have the money to afford more expensive products and can increase the company's revenue. They already have the funds, we just need to create an easy environment to keep our customers coming back to us and not to our competitors.  
